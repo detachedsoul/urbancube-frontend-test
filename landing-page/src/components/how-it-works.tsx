@@ -24,7 +24,7 @@ const usageSteps = [
 
 const HowItWorks = () => {
 	return (
-		<section className="space-y-9 pt-24 section-padding">
+		<section className="space-y-9 py-24 section-padding">
 			<div className="space-y-5">
 				<div className="text-center w-auto mx-auto grid place-content-center">
 					<p className="font-semibold text-[#3f3f46] text-sm/4.5 border border-[#d1d1d6] rounded-full py-2 px-3 text-center">
