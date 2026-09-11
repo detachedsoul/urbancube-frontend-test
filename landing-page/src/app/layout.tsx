@@ -42,15 +42,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 	return (
 		<html
 			lang="en"
-			className={`${inter.variable} h-full leading-normal antialiased`}
+			className={`${inter.variable} h-full leading-normal antialiased selection:bg-brand-purple selection:text-white`}
 		>
 			<body>
-                <Header />
+				<Header />
 
-                {children}
+				{children}
 
-                <Footer />
-            </body>
+				<Footer />
+			</body>
 		</html>
 	);
 }

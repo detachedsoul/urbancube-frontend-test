@@ -1,15 +1,13 @@
-
+import HeroSection from "@/components/hero-section";
+import WhyUs from "@/components/why-us";
 
 const Index = () => {
     return (
-		<>
-			<p>Hello, World!</p>
+        <>
+            {/* <HeroSection /> */ }
 
-			<p>Welcome to my landing page!</p>
+            <WhyUs />
 
-			<p>lorem500</p>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit maxime fugiat delectus impedit a iure asperiores expedita explicabo, ipsam dolorum laborum molestiae temporibus culpa doloribus neque placeat, numquam corrupti porro perferendis unde? Expedita sit sequi minima neque ullam in totam atque quae esse, reiciendis nobis, quibusdam temporibus. Earum nulla eos explicabo harum enim vero similique. Mollitia ex expedita doloremque eius repellat dolorum tenetur officia accusantium quidem nesciunt? Distinctio nostrum alias libero illo error veritatis deserunt deleniti sequi, saepe nemo asperiores dolorum quos nesciunt consequatur aut. Nostrum ducimus ut quos inventore quidem molestias adipisci repellendus maxime. Quam sed velit quis ex repudiandae autem quibusdam omnis hic suscipit, vero fuga quas quidem nesciunt nulla laborum? Consequatur, sapiente fugit ipsa obcaecati commodi ab consectetur cumque accusantium sunt provident nulla beatae, laudantium blanditiis voluptatibus illo! Voluptatum vel blanditiis qui recusandae sunt quasi doloremque sed culpa vitae earum omnis sint nihil labore alias rem, aperiam, tempore minus ratione in. Sapiente aliquid voluptas temporibus! Dolore, repellendus impedit eveniet, eligendi id distinctio deleniti, eaque consequuntur eos asperiores voluptatibus ullam nobis? Fuga voluptates pariatur adipisci reiciendis, obcaecati magnam minima neque eaque ratione distinctio in delectus suscipit velit amet, labore numquam? Architecto cum molestiae consequuntur dolore repudiandae culpa hic? Corporis id sint impedit perspiciatis ea, eum adipisci tempore consequatur sit sunt cupiditate odio pariatur doloremque reiciendis quam, sapiente consectetur deserunt ab fugiat dolor nihil. Nostrum modi, error natus odio voluptatibus odit fugit praesentium, harum a repudiandae sed quam reiciendis deserunt mollitia eius! Dicta aut commodi mollitia adipisci sit reiciendis quae architecto unde, itaque odio explicabo excepturi sint dolor voluptates voluptas beatae? Commodi, nulla sint exercitationem autem reiciendis nihil quos cum minus sapiente repudiandae velit nemo alias nobis voluptatum repellendus praesentium voluptate libero. Amet at obcaecati possimus nisi nam blanditiis consequuntur reiciendis. Molestiae unde voluptatum dolore blanditiis distinctio architecto, iusto laborum minus quisquam eius vitae labore delectus quam veritatis porro, possimus facilis doloribus rem non quod cum! Libero fuga debitis repudiandae quasi amet voluptatum necessitatibus aperiam eaque magnam? Exercitationem, laboriosam perferendis praesentium est vel, quidem at ipsa iusto sit ea nam delectus nemo vitae expedita officiis, minima adipisci harum nesciunt fuga aperiam deleniti dolore rem fugiat! Vero eius tempora ratione molestias repellendus nostrum modi tenetur saepe maiores consequatur, commodi iusto id dignissimos molestiae, omnis hic sit? Adipisci suscipit ullam eos accusantium cumque commodi tempore ex dolore laudantium assumenda perferendis molestias perspiciatis, odio facilis eaque maiores omnis aliquam nisi dignissimos, repudiandae fugiat illo nihil? Sint ipsum saepe totam ducimus perspiciatis obcaecati laudantium beatae ullam a tempore, incidunt ut facere quaerat pariatur corporis libero rem fugiat quas sit, minima quidem omnis! Inventore modi facilis aliquam quibusdam cumque nihil maxime eos, sunt eum delectus dolore ducimus ipsam nesciunt? Perferendis corporis provident, ut ipsa sequi assumenda quisquam culpa odit. Quis quia fugiat officiis eveniet. Maiores unde perferendis odio amet architecto qui repellendus quam labore dolorem incidunt, magni corrupti officia reiciendis saepe, voluptatum culpa? Saepe ipsam, animi, eligendi cumque maxime, harum culpa reprehenderit earum voluptate beatae aut accusantium nostrum sapiente nobis similique blanditiis dolores facilis!</p>
 		</>
 	);
 };

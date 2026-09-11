@@ -6,7 +6,7 @@ import AppStoreIcon from "@/assets/appstore-icon.png";
 import PlayStoreIcon from "@/assets/playstore-icon.png";
 import { ChevronDownIcon, XIcon } from "lucide-react";
 import { cn } from "cn";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
@@ -155,10 +155,9 @@ const NavBar = ({ isOpen, closeMenu }: NavBarProps) => {
 					const isActive = activeDropdown === link.name;
 
 					return (
-						<>
+						<Fragment key={link.name}>
 							<li
 								className="text-xl md:text-sm"
-								key={link.name}
 							>
 								{link.href ? (
 									<Link
@@ -290,7 +289,7 @@ const NavBar = ({ isOpen, closeMenu }: NavBarProps) => {
 									</div>
 								)}
 							</li>
-						</>
+						</Fragment>
 					);
 				})}
 			</ul>

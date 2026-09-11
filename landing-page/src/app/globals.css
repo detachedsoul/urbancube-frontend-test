@@ -6,6 +6,7 @@
 	--color-brand-gray-dark: #fafafa;
 	--color-brand-neutral: #70707b;
 	--color-brand-neutral-black: #18181b;
+    --color-brand-gold: #ffa631;
 }
 
 @layer components {
