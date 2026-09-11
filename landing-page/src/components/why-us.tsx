@@ -46,7 +46,7 @@ const sections = [
 
 const WhyUs = () => {
 	return (
-		<section className="space-y-9 pt-24 px-4 md:px-10 lg:px-20 2xl:px-40">
+		<section className="space-y-9 pt-24 section-padding">
 			<div className="space-y-5">
 				<div className="text-center w-auto mx-auto grid place-content-center">
 					<p className="font-semibold text-[#3f3f46] text-sm/4.5 border border-[#d1d1d6] rounded-full py-2 px-3 text-center">
@@ -66,7 +66,7 @@ const WhyUs = () => {
 			</div>
 
 			<div className="grid gap-5 items-stretch md:gap-6 md:grid-cols-2">
-				{sections.map((section, index) => (
+				{sections.map((section) => (
 					<div
 						className="space-y-3"
 						key={section.header}

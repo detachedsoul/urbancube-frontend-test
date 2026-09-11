@@ -3,7 +3,7 @@ import HeroImage from "@/assets/hero-image.png";
 
 const HeroSection = () => {
 	return (
-		<section className="bg-gray-900 grid gap-8 md:grid-cols-2 md:items-center pt-12 px-4 md:px-10 lg:px-20 2xl:px-40">
+		<section className="bg-gray-900 grid gap-8 md:grid-cols-2 md:items-center pt-12 section-padding">
 			<div className="space-y-5">
 				<h1 className="text-white font-semibold text-[1.75rem]/8 md:text-7xl/20">
 					Pay, Convert, and Spend —{" "}

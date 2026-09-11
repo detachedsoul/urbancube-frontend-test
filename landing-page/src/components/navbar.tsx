@@ -156,17 +156,18 @@ const NavBar = ({ isOpen, closeMenu }: NavBarProps) => {
 
 					return (
 						<Fragment key={link.name}>
-							<li
-								className="text-xl md:text-sm"
-							>
+							<li className="text-xl md:text-sm">
 								{link.href ? (
 									<Link
 										className={cn(
-											"md:rounded-full block max-md:w-full bg-white text-[#3f3f46] font-semibold py-1.5 md:px-3 max-md:border-b max-md:border-[#f4f4f5] max-md:pb-6",
+											"md:rounded-full block max-md:w-full font-semibold py-1.5 md:px-3 max-md:border-b max-md:border-[#f4f4f5] max-md:pb-6",
 											{
-												"text-brand-neutral":
+												"text-brand-neutral md:text-[#c4c4c4]":
 													activeLink ||
 													pathname !== link.href,
+												"bg-white md:text-[#3f3f46]":
+													pathname === link.href &&
+													!activeLink,
 											},
 										)}
 										href={link.href}
@@ -209,7 +210,7 @@ const NavBar = ({ isOpen, closeMenu }: NavBarProps) => {
 								{activeLink === link && link.children && (
 									<div
 										className={cn(
-											"grid transition-[grid-template-rows,opacity] duration-300 delay-75 ease-in-out md:bg-white md:rounded-[1.25rem] md:p-3 md:absolute md:top-14 md:left-1/2 md:-translate-x-1/2 md:max-w-[50dvw] md:border md:border-[#e3e8ef33] md:max-h-[80dvh] md:overflow-hidden animate-dropdown-in",
+											"grid transition-[grid-template-rows,opacity] duration-300 ease-in-out md:bg-white md:rounded-[1.25rem] md:p-3 md:absolute md:top-14 md:left-1/2 md:-translate-x-1/2 md:max-w-[50dvw] md:border md:border-[#e3e8ef33] md:max-h-[80dvh] md:overflow-hidden",
 											{
 												"grid-rows-[1fr] opacity-100 mt-3.5":
 													isActive,
@@ -264,7 +265,7 @@ const NavBar = ({ isOpen, closeMenu }: NavBarProps) => {
 												<div className="grid gap-3 grid-cols-2">
 													<Link href="/">
 														<Image
-															className="w-full h-11 aspect-video"
+															className="w-full h-11"
 															src={AppStoreIcon}
 															alt="Download on AppStore"
 															width={100}
@@ -275,7 +276,7 @@ const NavBar = ({ isOpen, closeMenu }: NavBarProps) => {
 
 													<Link href="/">
 														<Image
-															className="w-full h-11 aspect-video"
+															className="w-full h-11"
 															src={PlayStoreIcon}
 															alt="Download on PlayStore"
 															width={100}

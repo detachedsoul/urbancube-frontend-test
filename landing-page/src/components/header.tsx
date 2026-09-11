@@ -12,7 +12,7 @@ const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<header className="sticky top-0 z-9999 flex items-center justify-between gap-4 bg-gray-900 p-4 md:px-10 lg:px-20 2xl:px-40">
+		<header className="sticky top-0 z-9999 flex items-center justify-between gap-4 bg-gray-900 p-4 section-padding">
 			<Link className="shrink-0" href="/">
 				<Image
 					className="w-28.5 h-7 aspect-video"
