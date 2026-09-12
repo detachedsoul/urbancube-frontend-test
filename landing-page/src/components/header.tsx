@@ -6,14 +6,29 @@ import NavBar from "./navbar";
 import AuthButtons from "./auth-buttons";
 import Logo from "@/assets/logo.png";
 import { MenuIcon } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
 
+	useEffect(() => {
+		if (!isOpen) return;
+
+		const originalOverflow = document.body.style.overflow;
+
+		document.body.style.overflow = "hidden";
+
+		return () => {
+			document.body.style.overflow = originalOverflow;
+		};
+	}, [isOpen]);
+
 	return (
-		<header className="sticky top-0 z-9999 flex items-center justify-between gap-4 bg-gray-900 p-4 section-padding">
-			<Link className="shrink-0" href="/">
+		<header className="flex items-center justify-between gap-4 p-4 section-padding">
+			<Link
+				className="shrink-0"
+				href="/"
+			>
 				<Image
 					className="w-28.5 h-7 aspect-video"
 					src={Logo}

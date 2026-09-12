@@ -57,8 +57,8 @@ const HeroSection = () => {
 	}, [isModalOpen]);
 
 	return (
-		<section className="bg-gray-900 grid gap-8 md:grid-cols-2 md:items-center pt-12 section-padding max-md:px-0">
-			<div className="space-y-5 max-md:px-4">
+		<section className="grid md:grid-cols-2 md:items-center pt-12 relative md:gap-8 md:pt-0">
+			<div className="space-y-5 section-padding max-md:pr-0 md:pr-0 lg:pr-0 2xl:pr-0">
 				<h1 className="text-white font-semibold text-[1.75rem]/8 md:text-7xl/20">
 					Pay, Convert, and Spend —{" "}
 					<span className="text-brand-gold">Effortlessly.</span>
@@ -72,14 +72,14 @@ const HeroSection = () => {
 
 				<div className="flex items-center flex-wrap gap-3">
 					<Link
-						className="auth-button bg-brand-purple text-white hover:bg-brand-purple/90 border-brand-purple/30 hover:outline-brand-purple/60"
+						className="auth-button max-md:py-2.5 bg-brand-purple text-white hover:bg-brand-purple/90 border-brand-purple/30 hover:outline-brand-purple/60"
 						href="/auth/register"
 					>
 						Create an Account
 					</Link>
 
 					<button
-						className="auth-button hover:outline-[#d1d1d6]/60 md:hover:outline-[#d1d1d633]/60 bg-brand-gray text-white hover:bg-brand-gray/90 border-[#d1d1d633] flex items-center gap-2"
+						className="auth-button max-md:py-2.5 hover:outline-[#d1d1d6]/60 md:hover:outline-[#d1d1d633]/60 bg-brand-gray text-white hover:bg-brand-gray/90 border-[#d1d1d633] flex items-center gap-2"
 						type="button"
 						onClick={openModal}
 					>
@@ -119,12 +119,14 @@ const HeroSection = () => {
 				</div>
 			</div>
 
-			<div className="bg-red-500 relative w-full h-full">
+			<div className="relative w-full h-full">
 				<Image
 					className="size-full object-cover"
 					src={HeroImage}
 					alt="Pay, convert and spend on UrbanCube"
 				/>
+
+				<div className="absolute inset-x-0 bottom-0 h-1/3 [background:linear-gradient(180deg,rgba(15,15,16,0)_5.52%,#0F0F10_92.64%)] pointer-events-none" />
 			</div>
 
 			{shouldRenderModal && (

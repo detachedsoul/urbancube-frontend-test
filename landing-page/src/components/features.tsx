@@ -172,7 +172,7 @@ const featuresCards = [
 
 const Features = () => {
 	return (
-		<section className="section-padding bg-gray-900 grid gap-8 py-16 md:py-24 items-start md:grid-cols-2 md:gap-8">
+		<section className="section-padding bg-[url('/feature-background-mobile.webp')] md:bg-[url('/feature-background.webp')] bg-no-repeat bg-cover bg-bottom-right grid gap-8 py-16 md:py-24 items-start md:grid-cols-2 md:gap-8">
 			<div className="space-y-5">
 				<div className="text-center w-auto max-md:mx-auto max-md:grid max-md:place-content-center md:inline-block">
 					<p className="font-semibold text-[#d1d1d6] text-sm/4.5 border border-[#3f3f46] rounded-full py-2 px-3 text-center">
@@ -194,7 +194,7 @@ const Features = () => {
 			<div className="grid gap-4 md:grid-cols-2">
 				{featuresCards.map((feature) => (
 					<div
-						className="pt-4 px-4 pb-6 rounded-3xl border border-[#ffffff26] bg-[#5a5a5a33] space-y-6"
+						className="pt-4 px-4 pb-6 rounded-3xl border border-[#ffffff26] bg-[#5a5a5a33] flex flex-col justify-between gap-5 md:gap-[3.438rem]"
 						key={feature.name}
 					>
 						{feature.icon}

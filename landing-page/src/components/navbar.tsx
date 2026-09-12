@@ -121,7 +121,7 @@ const NavBar = ({ isOpen, closeMenu }: NavBarProps) => {
 	return (
 		<nav
 			className={cn(
-				"bg-white text-brand-neutral-black px-4 transition-transform ease-in-out duration-300 max-md:flex max-md:flex-col max-md:gap-8 md:bg-brand-gray md:border md:border-brand-gray md:text-[#c4c4c4] font-medium md:rounded-full md:p-1 max-md:absolute max-md:top-0 max-md:left-0 max-md:w-full max-md:h-dvh max-md:place-content-start max-md:overflow-y-auto",
+				"bg-white text-brand-neutral-black px-4 transition-transform ease-in-out duration-300 max-md:flex max-md:flex-col max-md:gap-8 md:bg-brand-gray md:border md:border-brand-gray md:text-[#c4c4c4] font-medium md:rounded-full md:p-1 max-md:absolute max-md:top-0 max-md:left-0 max-md:w-full max-md:h-dvh max-md:place-content-start max-md:overflow-y-auto z-50",
 				{
 					"max-md:translate-y-0": isOpen,
 					"max-md:-translate-y-full": !isOpen,
@@ -210,7 +210,7 @@ const NavBar = ({ isOpen, closeMenu }: NavBarProps) => {
 								{activeLink === link && link.children && (
 									<div
 										className={cn(
-											"grid transition-[grid-template-rows,opacity] duration-300 ease-in-out md:bg-white md:rounded-[1.25rem] md:p-3 md:absolute md:top-14 md:left-1/2 md:-translate-x-1/2 md:max-w-[50dvw] md:border md:border-[#e3e8ef33] md:max-h-[80dvh] md:overflow-hidden",
+											"grid transition-[grid-template-rows,opacity] duration-300 ease-in-out md:bg-white md:rounded-[1.25rem] md:p-3 md:absolute md:top-14 md:left-1/2 md:-translate-x-1/2 md:max-w-[50dvw] md:border md:border-[#e3e8ef33] md:max-h-[80dvh] md:overflow-hidden z-50",
 											{
 												"grid-rows-[1fr] opacity-100 mt-3.5":
 													isActive,

@@ -1,5 +1,5 @@
-import Header from "@/components/header";
 import Footer from "@/components/footer";
+import HeaderContainer from "@/components/header-container";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -45,7 +45,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 			className={`${inter.variable} h-full leading-normal antialiased selection:bg-brand-purple selection:text-white wrap-break-word [word-break:break-word] [word-wrap:break-word]`}
 		>
 			<body>
-				<Header />
+				<HeaderContainer />
 
 				{children}
 
