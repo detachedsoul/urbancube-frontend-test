@@ -7,7 +7,7 @@ import Mockup from "@/assets/footer-mockup.png";
 const Footer = () => {
 	return (
 		<footer className="section-padding py-16">
-			<div className="bg-brand-purple p-4 rounded-[1.25rem] md:rounded-[2.25rem] grid gap-2.5 md:p-0 md:grid-cols-2 md:items-center">
+			<div className="bg-brand-purple p-4 rounded-[1.25rem] md:rounded-[2.25rem] grid gap-2.5 md:p-0 lg:grid-cols-2 lg:items-center">
 				<div className="space-y-5 md:p-8">
 					<h2 className="font-semibold text-[1.75rem]/8 tracking-[-0.031rem] text-white md:text-[2.5rem]/13 md:tracking-[-0.094rem]">
 						Simplify your digital life with UrbanCube

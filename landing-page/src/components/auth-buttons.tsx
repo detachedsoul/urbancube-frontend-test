@@ -2,17 +2,22 @@ import Link from "next/link";
 import { cn } from "cn";
 
 type AuthButtonsProps = {
-	variant?: "desktop" | "mobile";
+	variant?: "desktop" | "mobile" | "tablet";
 };
 
 const AuthButtons = ({ variant = "desktop" }: AuthButtonsProps) => {
 	const isMobile = variant === "mobile";
 
+	const isTablet = variant === "tablet";
+
 	return (
 		<div
 			className={cn("items-center gap-3", {
-				"flex justify-between sticky bottom-0 bg-white py-4 md:hidden": isMobile,
-				"hidden md:flex": !isMobile,
+				"flex py-4":
+					isMobile || isTablet,
+				"md:hidden bg-white justify-between sticky bottom-0": isMobile,
+				"hidden lg:flex": !isMobile,
+				"hidden md:flex": isTablet,
 			})}
 		>
 			<Link

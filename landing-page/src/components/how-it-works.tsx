@@ -67,7 +67,7 @@ const HowItWorks = () => {
 				</div>
 			</div>
 
-			<div className="grid md:flex gap-10 md:gap-16 md:items-center md:mx-auto lg:w-3/4">
+			<div className="grid md:flex gap-10 lg:gap-16 md:items-center md:mx-auto lg:w-3/4">
 				<Image
 					className="w-3/4 md:w-2/5 max-md:mx-auto"
 					src={UrbanCubeAppMockUp}

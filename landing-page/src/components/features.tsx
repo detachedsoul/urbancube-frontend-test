@@ -172,19 +172,19 @@ const featuresCards = [
 
 const Features = () => {
 	return (
-		<section className="section-padding bg-[url('/feature-background-mobile.webp')] md:bg-[url('/feature-background.webp')] bg-no-repeat bg-cover bg-bottom-right grid gap-8 py-16 md:py-24 items-start md:grid-cols-2 md:gap-8">
+		<section className="section-padding bg-[url('/feature-background-mobile.webp')] md:bg-[url('/feature-background.webp')] bg-no-repeat bg-cover bg-bottom-right grid gap-8 py-16 md:py-24 items-start lg:grid-cols-2 md:gap-8">
 			<div className="space-y-5">
-				<div className="text-center w-auto max-md:mx-auto max-md:grid max-md:place-content-center md:inline-block">
+				<div className="text-center w-auto max-lg:mx-auto max-lg:grid max-lg:place-content-center lg:inline-block">
 					<p className="font-semibold text-[#d1d1d6] text-sm/4.5 border border-[#3f3f46] rounded-full py-2 px-3 text-center">
 						Spotlight Features
 					</p>
 				</div>
 
-				<h2 className="max-md:text-center font-semibold text-[1.75rem]/8 tracking-[-0.031rem] text-white md:text-[2.75rem]/13 md:tracking-[-0.125rem]">
+				<h2 className="max-lg:text-center font-semibold text-[1.75rem]/8 tracking-[-0.031rem] text-white md:text-[2.75rem]/13 md:tracking-[-0.125rem]">
 					More Than Just a Wallet
 				</h2>
 
-				<p className="max-md:text-center text-[#d1d1d6] font-medium md:text-lg/8">
+				<p className="max-lg:text-center text-[#d1d1d6] font-medium md:text-lg/8">
 					From daily payments to cross-border spending, UrbanCube
 					gives you total control of your finances — all in one secure
 					app.

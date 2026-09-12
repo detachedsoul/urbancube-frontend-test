@@ -57,8 +57,8 @@ const HeroSection = () => {
 	}, [isModalOpen]);
 
 	return (
-		<section className="grid md:grid-cols-2 md:items-center pt-12 relative md:gap-8 md:pt-0">
-			<div className="space-y-5 section-padding max-md:pr-0 md:pr-0 lg:pr-0 2xl:pr-0">
+		<section className="grid lg:grid-cols-2 lg:items-center pt-12 relative lg:gap-8 lg:pt-0">
+			<div className="space-y-5 section-padding md:pr-0 lg:pr-0 2xl:pr-0 md:-mb-12 lg:mb-0">
 				<h1 className="text-white font-semibold text-[1.75rem]/8 md:text-7xl/20">
 					Pay, Convert, and Spend —{" "}
 					<span className="text-brand-gold">Effortlessly.</span>
@@ -121,7 +121,7 @@ const HeroSection = () => {
 
 			<div className="relative w-full h-full">
 				<Image
-					className="size-full object-cover"
+					className="size-full"
 					src={HeroImage}
 					alt="Pay, convert and spend on UrbanCube"
 				/>
@@ -143,7 +143,7 @@ const HeroSection = () => {
 				>
 					<div
 						className={cn(
-							"w-full max-w-lg overflow-hidden bg-white rounded-[1.25rem] w-[90%] md:w-2/5 transition-all duration-300 ease-in-out overflow-y-auto hide-scrollbar max-h-[90dvh]",
+							"max-w-lg overflow-hidden bg-white rounded-[1.25rem] w-[90%] md:w-3/5 lg:w-2/5 transition-all duration-300 ease-in-out overflow-y-auto hide-scrollbar max-h-[90dvh]",
 							{
 								"translate-y-0 scale-100 opacity-100":
 									isModalOpen,
