@@ -124,6 +124,7 @@ const HeroSection = () => {
 					className="size-full"
 					src={HeroImage}
 					alt="Pay, convert and spend on UrbanCube"
+                    priority
 				/>
 
 				<div className="absolute inset-x-0 bottom-0 h-1/3 [background:linear-gradient(180deg,rgba(15,15,16,0)_5.52%,#0F0F10_92.64%)] pointer-events-none" />

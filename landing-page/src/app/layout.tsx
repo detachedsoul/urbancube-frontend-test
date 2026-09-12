@@ -40,7 +40,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 	return (
 		<html
 			lang="en"
-			className={`${inter.variable} h-full leading-normal antialiased selection:bg-brand-purple selection:text-white wrap-break-word [word-break:break-word] [word-wrap:break-word]`}
+			className={`${inter.variable} h-full leading-normal antialiased selection:bg-brand-purple selection:text-white wrap-break-word [word-break:break-word] [word-wrap:break-word] font-inter`}
 		>
 			<body>
 				{children}
