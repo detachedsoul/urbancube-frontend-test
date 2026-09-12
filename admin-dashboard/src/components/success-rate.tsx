@@ -20,7 +20,7 @@ const SuccessRate = () => {
 				Bills Payment Success Rate
 			</h3>
 
-			<div className="grid gap-4 flex-1 items-center px-4 py-4.5 md:grid-cols-2 md:place-content-center mx-auto">
+			<div className="grid gap-4 flex-1 items-center px-4 py-4.5 lg:grid-cols-2 lg:place-content-center mx-auto">
 				<div className="size-full">
 					<ChartContainer
 						config={chartConfig}
@@ -85,7 +85,7 @@ const SuccessRate = () => {
 					</ChartContainer>
 				</div>
 
-				<div className="max-md:text-center">
+				<div className="max-lg:text-center">
 					<p className="text-brand-neutral-black font-semibold leading-6">
 						Excellence performance
 					</p>

@@ -1,21 +1,26 @@
+import Header from "@/components/header";
 import NewSignUps from "@/components/new-sign-ups-table";
 import StatsCards from "@/components/stats-cards";
 import SuccessRate from "@/components/success-rate";
 import TransactionVolume from "@/components/transaction-volume";
 
 const Index = () => {
-    return (
-		<main className="space-y-6 section-padding py-5">
-			{/* <StatsCards />
+	return (
+		<>
+			<Header />
 
-			<TransactionVolume /> */}
+			<main className="space-y-6 section-padding py-5">
+				<StatsCards />
 
-            <div className="grid gap-6 md:grid-cols-2">
-                <SuccessRate />
+				<TransactionVolume />
 
-                <NewSignUps />
-            </div>
-		</main>
+				<div className="grid gap-6 md:grid-cols-2">
+					<SuccessRate />
+
+					<NewSignUps />
+				</div>
+			</main>
+		</>
 	);
 };
 
