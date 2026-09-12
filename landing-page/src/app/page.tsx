@@ -5,15 +5,17 @@ import HowItWorks from "@/components/how-it-works";
 import WhyUs from "@/components/why-us";
 
 const Index = () => {
-    return (
+	return (
 		<>
-			<HeaderContainer />
+			<main>
+				<HeaderContainer />
 
-			<WhyUs />
+				<WhyUs />
 
-			<HowItWorks />
+				<HowItWorks />
 
-			<Features />
+				<Features />
+            </main>
 
 			<Footer />
 		</>
