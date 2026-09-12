@@ -24,7 +24,7 @@ const Header = () => {
 	}, [isOpen]);
 
 	return (
-		<header className="flex items-center justify-between gap-4 p-4 section-padding">
+		<header className="flex items-center justify-between gap-4 py-4 section-padding md:pb-0">
 			<Link
 				className="shrink-0"
 				href="/"
