@@ -1,5 +1,6 @@
 import NewSignUps from "@/components/new-sign-ups-table";
 import StatsCards from "@/components/stats-cards";
+import SuccessRate from "@/components/success-rate";
 import TransactionVolume from "@/components/transaction-volume";
 
 const Index = () => {
@@ -10,6 +11,8 @@ const Index = () => {
 			<TransactionVolume /> */}
 
             <div className="grid gap-6 md:grid-cols-2">
+                <SuccessRate />
+
                 <NewSignUps />
             </div>
 		</main>
