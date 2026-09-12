@@ -119,7 +119,7 @@ const HeroSection = () => {
 				</div>
 			</div>
 
-			<div className="relative w-full h-full">
+			<div className="relative size-full">
 				<Image
 					className="size-full"
 					src={HeroImage}
