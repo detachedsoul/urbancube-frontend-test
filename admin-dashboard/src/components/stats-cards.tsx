@@ -15,7 +15,7 @@ const StatsCards = () => {
 	);
 
 	return (
-		<section className="section-padding space-y-6 py-5">
+		<section className="space-y-6">
 			<div className="flex flex-wrap items-center justify-between gap-4">
 				<div className="space-y-0.5">
 					<h1 className="text-brand-neutral-black text-2xl/7 font-semibold">
@@ -27,7 +27,7 @@ const StatsCards = () => {
 					</p>
 				</div>
 
-				<div className="flex flex-wrap items-center gap-0.5 rounded-lg bg-brand-neutral-100 p-1">
+				<div className="flex flex-wrap items-center gap-1 rounded-lg bg-brand-neutral-100">
 					{filterOptions.map((option) => (
 						<button
 							className={cn(
