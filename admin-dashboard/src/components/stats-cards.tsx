@@ -109,7 +109,7 @@ const StatsCards = () => {
 									/>
 								</svg>
 							)}{" "}
-							{`${stat.isPositive ? "+" : "-"}${stat.differencePercentage}`}{" "}
+							{`${stat.isPositive ? "+" : "-"}${stat.differencePercentage}`}%{" "}
 							<span className="font-normal text-[#3f3f46]">
 								{currentFilter?.comparison}
 							</span>
